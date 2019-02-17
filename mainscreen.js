@@ -8,9 +8,19 @@ function openNav() {
     document.body.style.backgroundColor = "black";
   }
 
-  function onSubClick(){
+  function onSubClick(param){
    // document.getElementById("maincontent").style.height="0%";
     //document.getElementById("maincontent").style.zIndex=-1;
     //document.getElementById("maincontent").style.visibility="hidden";
     openNav();
+    var x=param.innerText;
+    console.log(x);
+    if(x=="Advance Java"){
+        $("#subjecttitle").html("<h1>Advance Java</h1>");
+    }
+    if(x=="Web Tech"){
+      $("#subjecttitle").html("<h1>Web Tech</h1>");
   }
+  }
+
+  

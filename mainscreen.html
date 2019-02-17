@@ -7,6 +7,7 @@
     <script type="text/javascript" src="mainscreen.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
 
 
     <style>
@@ -31,30 +32,30 @@
                 </button>
             </div>
             <div class="col-sm-4">
-                <button class="sub">
-                    Hello
+                <button class="sub" onclick="onSubClick(this)">
+                    Web Tech
                 </button>
             </div>
-            <div class="col-sm-4">
-                <button class="sub">
-                    Hello
+            <div class="col-sm-4" >
+                <button class="sub"  onclick="onSubClick(this)">
+                    DCDR
                 </button>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <button class="sub">
-                    Hello
+                <button class="sub"  onclick="onSubClick(this)">
+                    DOS
                 </button>
             </div>
             <div class="col-sm-4">
-                <button class="sub">
-                    Hello
+                <button class="sub"  onclick="onSubClick(this)">
+                    Dot Net
                 </button>
             </div>
             <div class="col-sm-4">
-                <button class="sub">
-                    Hello
+                <button class="sub"  onclick="onSubClick(this)">
+                    Software Engg.
                 </button>
             </div>
         </div>
@@ -65,8 +66,8 @@
 
     <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="titlebar"><p class="title">Advance Java</p></div>
-            <div style="margin:5px">
+            <div class="titlebar"><p class="title" id="subjecttitle"></p></div>
+            <div id="PaperList" style="margin:5px">
                 <ul>
                     <li>
                         2018
