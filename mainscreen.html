@@ -7,7 +7,7 @@
     <script type="text/javascript" src="mainscreen.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="jquery.min.js"></script>
+    <script src="jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
 
 
     <style>
@@ -67,17 +67,9 @@
     <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="titlebar"><p class="title" id="subjecttitle"></p></div>
-            <div id="PaperList" style="margin:5px">
-                <ul>
-                    <li>
-                        2018
-                    </li>
-                    <li>
-                        2017
-                    </li>
-                    <li>2016
+            <div style="margin:5px">
+                <ul id="paperlist">
 
-                    </li>
                 </ul>
             </div>
     </div>

@@ -4,7 +4,6 @@ const path=require('path');
 const {app,BrowserWindow}=electron;
 app.on('ready',function(){
     mainwindow = new BrowserWindow({
-        fullscreenable:true,
         hasShadow:true,
         transparent:true,
     });

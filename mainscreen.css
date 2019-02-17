@@ -1,5 +1,11 @@
+@font-face{
+  font-family: 'Cupertino';
+  src: url('/fonts/Cupertino.ttf');
+}
+
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Cupertino", sans-serif;
     transition: background-color .5s;
     overflow-x: hidden;
   }
@@ -7,7 +13,12 @@ body {
 ul{
   list-style-type:none;
 }
+h1{
+  font-family: "Cupertino";
+}
+
 li{
+  font-family: "Cupertino";
   font-size: 30px;
   align-self: center;
   box-sizing: border-box;
@@ -29,6 +40,8 @@ li{
 }
 
 .title{
+  font-weight: 800;
+  font-family: "Cupertino";
   font-size:50px;
   padding:2px;
   
@@ -37,6 +50,9 @@ li{
 }
 
 .sub{
+  font-family: "Cupertino";
+  font-size: 30px;
+  font-weight: 900;
   height: 200px;
   width: 100%;
   border-color: #d50000;
@@ -69,6 +85,7 @@ li{
     color: #818181;
     display: block;
     transition: 0.3s;
+    
   }
   
   .sidenav a:hover {
