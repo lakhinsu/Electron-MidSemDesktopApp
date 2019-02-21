@@ -27,6 +27,7 @@ li{
   background-color: #ffffff;
   margin: 5px;
   padding: 3px;
+  transition: background-color .3s;
   border-radius: 15px;
 }
 
@@ -55,9 +56,22 @@ li{
   font-weight: 900;
   height: 200px;
   width: 100%;
-  border-color: #d50000;
+  border-color: #701616;
   border-radius: 15px;
   border : 2px;
+  transition:background-color .3s;
+}
+
+button:hover{
+  background-color:rgba(17, 14, 14, 0.808);
+  color:white;
+
+}
+
+li:hover{
+  background-color:rgba(17, 14, 14, 0.808);
+  color:white;
+
 }
 
 #maincontent{
@@ -74,7 +88,7 @@ li{
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 1s;
     padding-top: 60px;
   }
   
@@ -84,7 +98,7 @@ li{
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
     
   }
   
@@ -115,3 +129,5 @@ li{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  

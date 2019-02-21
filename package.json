@@ -4,12 +4,21 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "Lak",
+    "win": {
+      "target": "NSIS"
+    }
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^4.0.5",
     "jquery": "^3.3.1"
-  }
+  },
+  "dependencies": {}
 }
